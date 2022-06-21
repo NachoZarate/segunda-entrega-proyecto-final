@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.grilla{
+  display: grid;
+  background-color: black;
+  grid-template-columns: (3, 1fr);
+  grid-template-rows: repeat(4, auto);
+  grid-gap: 10px;
+  grid-template-areas:
+  "header header header header"
+  "section1 section1 section2 section2"
+  "section1 section1 section2 section2"
+  "footer footer footer footer"
+  ;
+  width: 99%;
+  margin: 5px auto;
+}
+  
+  .header { 
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    color: aliceblue;
+    background-image: url(https://static.roland.com/assets/promos/jpg/cat_marquee_a-88mk2.jpg); 
+    }
+  header .logo {
+    grid-area: logo;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-right: 52%
+    ;
+  }
+
+  .lista{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    list-style: none;
+  }
+
+  .lista li{
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+  }
+  
+  .section1 { 
+    grid-area: section1; 
+    width: 100%;
+  }
+  
+  .section2 { 
+    grid-area: section2;
+    color: aliceblue; 
+  }
+  
+  .footer { 
+    grid-area: footer; 
+  
+  }
+  
+  
