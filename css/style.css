@@ -8,7 +8,7 @@
 
 .grilla{
   display: grid;
-  background-color: black;
+  background-image: linear-gradient(to bottom, black, rgb(39, 38, 39));
   grid-template-columns: (3, 1fr);
   grid-template-rows: repeat(4, auto);
   grid-gap: 10px;
@@ -40,11 +40,11 @@
   }
 
   .imagenLogo {
-    margin-left: 10%;
+    margin-left: 45%;
   }
 
   .logoTitulo {
-    margin-left: 20%;
+    margin-left: 75%;
   }  
 
   .lista{
@@ -53,13 +53,16 @@
     justify-content: flex-end;
     align-items: flex-end;
     list-style: none;
+    font-size: 120%;
   }
 
   .lista li{
     display: flex;
+    list-style: none;
     flex-direction: row;
     justify-content: space-between ;
     margin-right: 10px;
+    padding: 5px;
     transition: all 0.3s;
   }
 
@@ -81,12 +84,13 @@
   .footer { 
     grid-area: footer; 
     text-align: center;
-    padding: 10%;
+    padding: 2px;
   }
 
   footer i{
     color: aliceblue;
     font-size: 60px;
+    padding: 10%;
   }
   
   
